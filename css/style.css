@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all linear;
+}
+/* body{
+  overflow: hidden;
+} */
+.main-color{
+  color: #777;
+}
+#home{
+  height: 600px !important;
+  background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../pic/events-heavenly-header.jpg);
+  background-size: cover;
+}
+#tab{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.navBar{
+  width: 150px;
+}
+.navBar ul li a{
+  color: white;
+  transition: color .5s;
+}
+.navBar ul li a:hover{
+  color: red;
+}
+.open{
+  position: relative;
+cursor: pointer;
+}
+.head-color{
+  background-color: rgba(214, 46, 51 , 0.6);
+
+cursor: pointer;
+}
+#duration .head{
+  padding: 10px;
+  width: 50%;
+margin: 0;
+cursor: pointer;
+color: white;
+}
+ .para{
+  display: none;
+  background-color: #ccc !important;
+  transition: all .2s linear !important;
+}
+.spin{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background-color: #2746e1;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1, .cube2 {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+#detailes{
+  background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../pic/invitation-2508607__340.jpg) !important;
+
+}
+.ineer{
+  border: 2px solid white;
+}
+.social-aicon{
+  width: 40px;
+  height: 40px;
+  border: solid 1px red;
+  color: #777;
+  transition: all 1s;
+}
+.social-aicon:hover{
+  background-color: red;
+  color: white;
+}
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+textarea{
+max-height: 200px;
+min-height: 200px;
+}
+
+/* 
+let navWidth = $(".navBar").innerWidth();
+$(".navBar").css("left",-navWidth)
+console.log(navWidth);
+$(".open").click(function () {
+   if($(".navBar").css("left")==-navWidth){
+    $(".navBar").animate({left:"0px"},1000)
+   }else{
+    $(".navBar").animate({left:-navWidth},1000)
+////////
+$(".open").click(function () {
+    let navWidth = $(".navBar").innerWidth();
+    $(".navBar").slideToggle(1000)
+});
+   }
+    
+}); */
