@@ -5,14 +5,14 @@ let secondesCounter=document.querySelector("#secondes")
 let text=document.querySelector("#text")
 let chars=document.querySelector("#chars")
 
-// $(document).ready(function () {
-//     $(".spinner").fadeOut(1000,function(){
-//         $(".spin").slideUp(1000,function(){
-//             $("body").css("overflow","auto")
-//         });
+$(document).ready(function () {
+    $(".spinner").fadeOut(1000,function(){
+        $(".spin").slideUp(1000,function(){
+            $("body").css("overflow","auto")
+        });
       
-//     });
-// });
+    });
+});
 
 let navWidth = $(".navBar").innerWidth();
 console.log(navWidth);
